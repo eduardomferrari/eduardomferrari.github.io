@@ -113,33 +113,31 @@ ul { list-style: none; }
 .brand {
   display: inline-flex;
   align-items: center;
+  gap: 10px;
   flex-shrink: 0;
-  line-height: 0;
+  line-height: 1;
+  color: var(--white);
 }
-.brand img {
+.brand-mark {
   display: block;
-  width: 180px;
-  height: auto;
-  max-width: 38vw;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
 }
-.brand:hover { opacity: 0.92; }
-[data-theme="light"] .brand img {
-  background: transparent;
+.brand-word {
+  display: inline-flex;
+  align-items: baseline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.28rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
 }
-:not([data-theme="light"]) .brand img {
-  background: #FFFFFF;
-  border-radius: 4px;
-  padding: 3px 6px;
-}
-nav { display: flex; gap: 26px; }
-nav a {
-  font-size: 0.87rem;
-  color: var(--muted);
-  font-weight: 400;
-  white-space: nowrap;
-  transition: color 0.12s;
-}
-nav a:hover, .nav-active { color: var(--text); }
+.brand-ferrari { color: currentColor; }
+.brand-labs { color: var(--fl-sage); margin-left: 3px; }
+[data-theme="light"] .brand { color: var(--fl-charcoal); }
+[data-theme="light"] .brand-labs { color: var(--fl-forest); }
+.brand:hover { opacity: 0.90; color: var(--white); }
+[data-theme="light"] .brand:hover { color: var(--fl-charcoal); }
 
 /* ---- Language switcher ---- */
 .lang-switcher {
