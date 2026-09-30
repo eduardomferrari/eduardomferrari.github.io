@@ -1,0 +1,81 @@
+# FerrariLabs Website Brand System
+
+Canonical source for the public FerrariLabs corporate website only.
+
+## Scope
+
+Applies to:
+- `/index.html`
+- `/financial-crimes/`
+- `/small-business/`
+- `/insights.html`
+- translated corporate pages
+- `/styles.css`
+- `/assets/ferrarilabs-mark.svg`
+
+Does **not** apply automatically to `/bolao/` or the three pool applications. Their own visual governance remains independent.
+
+## Brand architecture
+
+FerrariLabs is the master brand with two service families:
+
+1. **Business AI & Automation**
+2. **Financial Crime Technology** — AML, KYC, Sanctions, Fraud, Digital Assets
+
+Do not create separate service-family logos.
+
+## Typography
+
+Use system-default **Arial**:
+`Arial, Helvetica, sans-serif`
+
+No Google Fonts or other webfont dependency is required for the corporate website.
+
+## Color tokens
+
+- Forest: `#0F3D2E`
+- Terracotta: `#B85C3E`
+- Ivory: `#F5EDE2`
+- Charcoal: `#1F2937`
+- Warm Gray: `#E7E1DA`
+- Sage: `#6F8579`
+
+Forest is primary. Terracotta is a controlled accent, not normal body text. Ivory/white is the preferred light background.
+
+## Logo
+
+The website uses the geometric architectural mark at `/assets/ferrarilabs-mark.svg` plus an Arial wordmark rendered in HTML/CSS.
+
+The mark intentionally uses:
+- Forest top/left geometry
+- Sage upper-right block
+- Terracotta lower block
+- Negative-space center
+
+Never add horses, shields, racing badges, checkered flags, racing stripes, racecars, automotive silhouettes, Rosso Corsa styling, or Ferrari S.p.A.-like typography.
+
+## UI rules
+
+- Light mode is the default.
+- Dark mode uses Forest rather than generic black/blue.
+- Buttons use Forest or Terracotta with accessible contrast.
+- Cards stay restrained, grid-aligned, and low-decoration.
+- Generous whitespace and strong alignment are preferred over decorative effects.
+- Headings use Arial Bold; body text uses Arial Regular.
+- Preserve semantic HTML, keyboard focus, reduced-motion support, and responsive behavior.
+
+## Change-control rule
+
+A FerrariLabs corporate-site branding change should stay within the corporate-site files unless the task explicitly calls for a separate Bolão review. Never propagate these colors/fonts into the Bolão apps incidentally.
+
+## Repository workflow
+
+The site is static and has no build step. Before merging:
+1. Preview locally with `python3 -m http.server 8080`.
+2. Check desktop and mobile widths.
+3. Verify `/`, `/financial-crimes/`, `/small-business/`, and `/insights.html`.
+4. Verify contact forms and Turnstile markup were not altered unintentionally.
+5. Run the repository's required `npm run check` locally before completing the change.
+6. Avoid unnecessary GitHub Actions runs; feature branches do not need remote CI merely for visual iteration.
+
+Drive source of truth: FerrariLabs Small Business → 08 Website → FerrariLabs Website Brand Migration Specification.
