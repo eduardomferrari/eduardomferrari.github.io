@@ -34,6 +34,19 @@ Three independent sub-projects:
 
 **Main site** (`index.html`, `financial-crimes/index.html`, `small-business/index.html`, `insights.html`, `index.pt.html`, `index.es.html`, `index.jp.html`, `styles.css`) — static FerrariLabs site. Since 2026-09-30 the homepage (`index.html`) is a short umbrella page linking to two service areas: `/financial-crimes/` (the former homepage content, moved there intact — AML/fraud/sanctions/digital-asset consulting) and `/small-business/` (practical technology for local small businesses). The PT/ES/JP pages are translations of the financial-crimes content, so their `hreflang="en"` / EN switcher point at `/financial-crimes/`. New pages use root-absolute paths (`/styles.css`). Contact form uses Formspree + Cloudflare Turnstile (keys must be set manually in the HTML); the same form is on `/`, `/financial-crimes/` and `/small-business/` (the last with `_subject` "Ferrari Labs — small business inquiry"). `/small-business/` carries schema.org `ProfessionalService` JSON-LD with locality and service area only — never a street address.
 
+### Corporate website brand system
+
+For the **Main site only**, the canonical visual system is documented in `docs/website/BRAND_SYSTEM.md`.
+
+- Typeface: Arial, Helvetica, sans-serif. Do not add Google Fonts/webfont dependencies.
+- Palette: Forest `#0F3D2E`, Terracotta `#B85C3E`, Ivory `#F5EDE2`, Charcoal `#1F2937`, Warm Gray `#E7E1DA`, Sage `#6F8579`.
+- Logo mark: `/assets/ferrarilabs-mark.svg`; wordmark is rendered in HTML/CSS with Arial.
+- FerrariLabs is the master brand; service families are Business AI & Automation and Financial Crime Technology.
+- Light mode is default; dark mode uses Forest, not generic black/blue.
+- Do not propagate this corporate brand into any Bolão app unless Eduardo explicitly requests a separate Bolão change.
+- Preserve the existing information architecture, SEO metadata, Formspree/Turnstile behavior, analytics, accessibility, and responsive behavior during brand changes.
+- Avoid unnecessary GitHub Actions usage: iterate and run the required checks locally before opening/merging a PR.
+
 **Copa do Mundo 2026** (`bolao/copa2026/`) — bracket pool, tournament concluded (Spain champion, 2026-07-19) and archived. Vanilla JS, no framework, no build system. URL: `www.ferrarilabs.com/bolao/copa2026/`. See "Copa do Mundo 2026 archive" below.
 
 **Brasileirão 2026** (`bolao/br2026/`) — G4/Z4 classification picks with live ESPN standings. Not published yet (no link from main site). URL: `www.ferrarilabs.com/bolao/br2026/`.
