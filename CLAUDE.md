@@ -16,7 +16,7 @@ O bump de cache-bust (`?v=`) é feito pelo bot `sync_version.yml`, que **dispara
 explicitamente** — um push com `GITHUB_TOKEN` não acorda workflow nenhum. Verificar deploy sempre
 comparando o `?v=` ao vivo com o do repositório.
 
-- Main site: `www.ferrarilabs.com`
+- Main site: `www.ferrarilabs.com` — plus `/financial-crimes/` and `/small-business/`
 - Bolão root: `www.ferrarilabs.com/bolao/` — redirects to Brasileirão (see below)
 - Copa do Mundo 2026: `www.ferrarilabs.com/bolao/copa2026/` (moved here 2026-07-19, v4.159 — see "Copa do Mundo 2026 archive" below)
 - Brasileirão 2026: `www.ferrarilabs.com/bolao/br2026/` (not published yet)
@@ -32,7 +32,7 @@ python3 -m http.server 8080
 
 Three independent sub-projects:
 
-**Main site** (`index.html`, `index.pt.html`, `index.es.html`, `index.jp.html`, `styles.css`) — static multilingual personal site about Eduardo Ferrari's work in financial crime/AML/AI compliance. Contact form uses Formspree + Cloudflare Turnstile (keys must be set manually in the HTML).
+**Main site** (`index.html`, `financial-crimes/index.html`, `small-business/index.html`, `insights.html`, `index.pt.html`, `index.es.html`, `index.jp.html`, `styles.css`) — static FerrariLabs site. Since 2026-09-30 the homepage (`index.html`) is a short umbrella page linking to two service areas: `/financial-crimes/` (the former homepage content, moved there intact — AML/fraud/sanctions/digital-asset consulting) and `/small-business/` (practical technology for local small businesses). The PT/ES/JP pages are translations of the financial-crimes content, so their `hreflang="en"` / EN switcher point at `/financial-crimes/`. New pages use root-absolute paths (`/styles.css`). Contact form uses Formspree + Cloudflare Turnstile (keys must be set manually in the HTML); the same form is on `/`, `/financial-crimes/` and `/small-business/` (the last with `_subject` "Ferrari Labs — small business inquiry").
 
 **Copa do Mundo 2026** (`bolao/copa2026/`) — bracket pool, tournament concluded (Spain champion, 2026-07-19) and archived. Vanilla JS, no framework, no build system. URL: `www.ferrarilabs.com/bolao/copa2026/`. See "Copa do Mundo 2026 archive" below.
 

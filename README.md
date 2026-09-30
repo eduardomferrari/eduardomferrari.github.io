@@ -1,16 +1,17 @@
 # Ferrari Labs
 
-Personal site for Eduardo Ferrari.
+FerrariLabs — Eduardo Ferrari's owner-operated technology practice.
 
 ## What this site is
 
-A static website focused on:
+A static website with two service areas:
 
-- financial crime transformation
-- AML, fraud, and sanctions strategy
-- model validation and explainability
-- AI in compliance environments
-- digital asset risk
+- `/financial-crimes/` — financial crimes & compliance technology: AML, fraud, sanctions,
+  model validation, AI in compliance, digital asset risk
+- `/small-business/` — practical technology for local and small businesses: websites,
+  lead follow-up, scheduling, customer communication, admin automation
+
+The homepage (`index.html`) briefly introduces FerrariLabs and links to both.
 
 ## Contact form setup
 
