@@ -10,10 +10,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.ferrarilabs.com/" />
   <link rel="canonical" href="https://www.ferrarilabs.com/" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css" />
+<link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="/assets/ferrarilabs-mark.svg" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KF98YDJNK7"></script>
   <script>
@@ -24,7 +22,7 @@
   </script>
   <script>
     (function(){
-      var t=localStorage.getItem('theme')||'dark';
+      var t=localStorage.getItem('theme')||'light';
       document.documentElement.setAttribute('data-theme',t);
       document.addEventListener('DOMContentLoaded',function(){
         var btn=document.getElementById('theme-toggle');
@@ -40,7 +38,7 @@
 <body>
   <div class="shell">
     <header class="site-header">
-      <a class="brand" href="/">FerrariLabs</a>
+      <a class="brand" href="/" aria-label="FerrariLabs home"><img src="/assets/ferrarilabs-logo.svg" alt="FerrariLabs" width="180" height="39" /></a>
       <nav aria-label="Primary">
         <a href="/" class="nav-active" aria-current="page">Home</a>
         <a href="/financial-crimes/">Financial Crimes</a>
@@ -56,7 +54,7 @@
       <section class="hero hero-simple">
         <div class="hero-inner">
           <h1>FerrariLabs</h1>
-          <p class="hero-tagline">Practical Technology. Real Problems. Straightforward Solutions.</p>
+          <p class="hero-tagline">Practical technology that solves real business problems.</p>
           <p class="lead">FerrariLabs provides specialized technology consulting for financial crimes and compliance organizations, and helps small businesses use modern technology, automation, and AI to solve everyday business problems. It is owner-operated and hands-on: the person you talk to is the person doing the work.</p>
         </div>
       </section>
@@ -77,7 +75,7 @@
           </article>
           <article class="path-card">
             <span class="kicker">Local &amp; small businesses</span>
-            <h2>Small Business Technology</h2>
+            <h2>Business AI &amp; Automation</h2>
             <p>Simple, affordable technology solutions for local and small businesses — websites, customer workflows, automation, lead handling and practical AI.</p>
             <ul class="aside-list">
               <li>Website improvements &amp; new sites</li>
