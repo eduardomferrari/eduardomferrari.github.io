@@ -1,45 +1,52 @@
 /* ============================================================
-   Eduardo Ferrari — Financial Crime Advisory
-   Fraunces (display serif) + DM Sans (body)
+   FerrariLabs — Corporate Design System
+   Italian Heritage palette + Arial system typography
    ============================================================ */
 
 :root {
-  --bg:        #0c0e12;
-  --surface:   #111318;
-  --surface-2: #15171e;
-  --border:    rgba(255,255,255,0.07);
-  --border-2:  rgba(255,255,255,0.11);
-  --text:      #d8e0ee;
-  --muted:     #8793a6;
-  --muted-2:   #5e6878;
-  --accent:    #7fa8d8;
-  --white:     #edf2fb;
+  --fl-forest:    #0F3D2E;
+  --fl-terracotta:#B85C3E;
+  --fl-ivory:     #F5EDE2;
+  --fl-charcoal:  #1F2937;
+  --fl-warm-gray: #E7E1DA;
+  --fl-sage:      #6F8579;
+
+  --bg:        #0F3D2E;
+  --surface:   #154A39;
+  --surface-2: #1B5643;
+  --border:    rgba(245,237,226,0.14);
+  --border-2:  rgba(245,237,226,0.22);
+  --text:      #F5EDE2;
+  --muted:     #D9D2C8;
+  --muted-2:   #A9B9B0;
+  --accent:    #B85C3E;
+  --white:     #F5EDE2;
   --max:       1120px;
-  --serif:     'Fraunces', Georgia, serif;
-  --sans:      'DM Sans', system-ui, sans-serif;
+  --serif:     Arial, Helvetica, sans-serif;
+  --sans:      Arial, Helvetica, sans-serif;
 }
 
 /* ---- Light mode ---- */
 [data-theme="light"] {
-  --bg:        #f5f6f8;
-  --surface:   #ffffff;
-  --surface-2: #eef0f4;
-  --border:    rgba(0,0,0,0.08);
-  --border-2:  rgba(0,0,0,0.13);
-  --text:      #1e2330;
-  --muted:     #5a6175;
-  --muted-2:   #8b94a8;
-  --accent:    #2c6fad;
-  --white:     #1a2030;
+  --bg:        #F5EDE2;
+  --surface:   #FFFFFF;
+  --surface-2: #E7E1DA;
+  --border:    rgba(15,61,46,0.12);
+  --border-2:  rgba(15,61,46,0.20);
+  --text:      #1F2937;
+  --muted:     #5E665F;
+  --muted-2:   #6F8579;
+  --accent:    #0F3D2E;
+  --white:     #0F3D2E;
 }
 [data-theme="light"] .site-header {
-  background: rgba(245,246,248,0.88);
+  background: rgba(245,237,226,0.94);
 }
 [data-theme="light"] .button-primary {
-  background: #1a2030;
-  color: #f5f6f8;
+  background: #0F3D2E;
+  color: #F5EDE2;
 }
-[data-theme="light"] .button-primary:hover { background: #2c3550; color: #f5f6f8; }
+[data-theme="light"] .button-primary:hover { background: #0B3024; color: #F5EDE2; }
 [data-theme="light"] .form-field input,
 [data-theme="light"] .form-field textarea {
   background: #ffffff;
@@ -98,19 +105,32 @@ ul { list-style: none; }
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(12,14,18,0.88);
+  background: rgba(15,61,46,0.94);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
 }
 .brand {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--white);
-  letter-spacing: 0.01em;
+  display: inline-flex;
+  align-items: center;
   flex-shrink: 0;
+  line-height: 0;
 }
-.brand:hover { color: var(--white); }
+.brand img {
+  display: block;
+  width: 180px;
+  height: auto;
+  max-width: 38vw;
+}
+.brand:hover { opacity: 0.92; }
+[data-theme="light"] .brand img {
+  background: transparent;
+}
+:not([data-theme="light"]) .brand img {
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 3px 6px;
+}
 nav { display: flex; gap: 26px; }
 nav a {
   font-size: 0.87rem;
@@ -161,7 +181,7 @@ nav a:hover, .nav-active { color: var(--text); }
 .hero-statement {
   font-family: var(--serif);
   font-size: clamp(2.2rem, 4.8vw, 3.9rem);
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1.07;
   letter-spacing: -0.02em;
   color: var(--white);
@@ -243,10 +263,10 @@ nav a:hover, .nav-active { color: var(--text); }
   transition: background 0.13s, color 0.13s, border-color 0.13s;
 }
 .button-primary {
-  background: var(--white);
-  color: #0c0e12;
+  background: var(--accent);
+  color: #FFFFFF;
 }
-.button-primary:hover { background: #c5d5ee; color: #0c0e12; }
+.button-primary:hover { background: #95472F; color: #FFFFFF; }
 .button-ghost {
   background: transparent;
   color: var(--muted);
@@ -518,8 +538,8 @@ nav a:hover, .nav-active { color: var(--text); }
 .form-field input:focus,
 .form-field textarea:focus {
   outline: none;
-  border-color: rgba(127,168,216,0.45);
-  box-shadow: 0 0 0 3px rgba(127,168,216,0.07);
+  border-color: rgba(15,61,46,0.50);
+  box-shadow: 0 0 0 3px rgba(15,61,46,0.10);
 }
 .form-field textarea { resize: vertical; min-height: 128px; }
 
@@ -579,7 +599,7 @@ nav a:hover, .nav-active { color: var(--text); }
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted-2);
-  background: rgba(255,255,255,0.04);
+  background: rgba(15,61,46,0.05);
   border: 1px solid var(--border-2);
   border-radius: 3px;
   padding: 4px 8px;
@@ -640,4 +660,25 @@ nav a:hover, .nav-active { color: var(--text); }
   .perspective-link { white-space: normal; }
   .insight-row { padding: 22px 20px; }
   .path-card { padding: 26px 22px; }
+}
+
+
+/* ---- FerrariLabs brand refinements ---- */
+::selection { background: rgba(184,92,62,0.24); }
+.kicker, .eyebrow, .lang-switcher .lang-active { color: var(--accent); }
+[data-theme="light"] .kicker,
+[data-theme="light"] .eyebrow,
+[data-theme="light"] .lang-switcher .lang-active { color: var(--fl-terracotta); }
+.path-card,
+.focus-card,
+.perspective-item,
+.insight-row,
+.form-field input,
+.form-field textarea {
+  box-shadow: 0 1px 0 rgba(15,61,46,0.04);
+}
+.path-card { border-top: 3px solid var(--fl-terracotta); }
+.site-footer { color: var(--muted); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
