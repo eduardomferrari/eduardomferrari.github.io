@@ -52,10 +52,8 @@
     }
   }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css" />
+<link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="/assets/ferrarilabs-mark.svg" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KF98YDJNK7"></script>
   <script>
@@ -66,7 +64,7 @@
   </script>
   <script>
     (function(){
-      var t=localStorage.getItem('theme')||'dark';
+      var t=localStorage.getItem('theme')||'light';
       document.documentElement.setAttribute('data-theme',t);
       document.addEventListener('DOMContentLoaded',function(){
         var btn=document.getElementById('theme-toggle');
@@ -82,7 +80,7 @@
 <body>
   <div class="shell">
     <header class="site-header">
-      <a class="brand" href="/">FerrariLabs</a>
+      <a class="brand" href="/" aria-label="FerrariLabs home"><img src="/assets/ferrarilabs-logo.svg" alt="FerrariLabs" width="180" height="39" /></a>
       <nav aria-label="Primary">
         <a href="/">Home</a>
         <a href="/financial-crimes/">Financial Crimes</a>
@@ -97,7 +95,7 @@
 
       <section class="hero">
         <div class="hero-inner">
-          <h1 class="eyebrow">Small Business Technology</h1>
+          <h1 class="eyebrow">Business AI &amp; Automation</h1>
           <p class="hero-statement">Practical help with the technology that runs your business.</p>
           <p class="lead">FerrariLabs helps local and small businesses fix everyday technology problems: a website that no longer does its job, inquiries that sit unanswered, scheduling that takes a dozen messages, or admin work that eats the afternoon. The goal is a simple, affordable fix sized for your business — not a big project you have to manage.</p>
           <div class="hero-actions">
