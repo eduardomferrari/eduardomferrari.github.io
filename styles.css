@@ -19,7 +19,7 @@
   --text:      #F5EDE2;
   --muted:     #D9D2C8;
   --muted-2:   #A9B9B0;
-  --accent:    #B85C3E;
+  --accent:    #E1B5A7;  /* Terracotta tint for TEXT on Forest (brand #B85C3E is 2.7:1 here); fills use --fl-terracotta */
   --white:     #F5EDE2;
   --max:       1120px;
   --serif:     Arial, Helvetica, sans-serif;
@@ -35,7 +35,7 @@
   --border-2:  rgba(15,61,46,0.20);
   --text:      #1F2937;
   --muted:     #5E665F;
-  --muted-2:   #6F8579;
+  --muted-2:   #56675E;  /* deeper Sage for small text: brand Sage #6F8579 is 3.4:1 on Ivory */
   --accent:    #0F3D2E;
   --white:     #0F3D2E;
 }
@@ -133,11 +133,20 @@ ul { list-style: none; }
   letter-spacing: -0.035em;
 }
 .brand-ferrari { color: currentColor; }
-.brand-labs { color: var(--fl-sage); margin-left: 3px; }
+.brand-labs { color: var(--fl-sage); }
 [data-theme="light"] .brand { color: var(--fl-charcoal); }
 [data-theme="light"] .brand-labs { color: var(--fl-forest); }
 .brand:hover { opacity: 0.90; color: var(--white); }
 [data-theme="light"] .brand:hover { color: var(--fl-charcoal); }
+nav { display: flex; gap: 26px; }
+nav a {
+  font-size: 0.87rem;
+  color: var(--muted);
+  font-weight: 400;
+  white-space: nowrap;
+  transition: color 0.12s;
+}
+nav a:hover, .nav-active { color: var(--text); }
 
 /* ---- Language switcher ---- */
 .lang-switcher {
@@ -261,7 +270,7 @@ ul { list-style: none; }
   transition: background 0.13s, color 0.13s, border-color 0.13s;
 }
 .button-primary {
-  background: var(--accent);
+  background: var(--fl-terracotta);
   color: #FFFFFF;
 }
 .button-primary:hover { background: #95472F; color: #FFFFFF; }
@@ -536,8 +545,8 @@ ul { list-style: none; }
 .form-field input:focus,
 .form-field textarea:focus {
   outline: none;
-  border-color: rgba(15,61,46,0.50);
-  box-shadow: 0 0 0 3px rgba(15,61,46,0.10);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(184,92,62,0.35);
 }
 .form-field textarea { resize: vertical; min-height: 128px; }
 
@@ -636,7 +645,9 @@ ul { list-style: none; }
 
 /* Header wraps below 900px (was 760px): the five-item nav plus the language
    switcher needs ~870px on one row. */
-@media (max-width: 900px) {
+/* 960 (was 900): the mark + Arial wordmark is ~70px wider than the old text brand, and
+   the header with the language switcher needs ~940px to keep comfortable gaps on one row. */
+@media (max-width: 960px) {
   .site-header { flex-wrap: wrap; gap: 10px; padding: 16px 0; }
   nav { order: 2; gap: 8px 18px; flex-wrap: wrap; flex-basis: 100%; }
   .lang-switcher { order: 3; margin-left: auto; }
@@ -666,7 +677,18 @@ ul { list-style: none; }
 .kicker, .eyebrow, .lang-switcher .lang-active { color: var(--accent); }
 [data-theme="light"] .kicker,
 [data-theme="light"] .eyebrow,
-[data-theme="light"] .lang-switcher .lang-active { color: var(--fl-terracotta); }
+[data-theme="light"] .lang-switcher .lang-active { color: #95472F; } /* deep Terracotta: brand #B85C3E is 3.9:1 on Ivory */
+/* Headings: Arial Bold. Arial has no light weight, so the inherited 300/500 values rendered Regular. */
+.section-title, .about-head h2, .contact-head h2, .path-card h2,
+.focus-card h3, .perspective-content h3, .insight-title, .hero h1.eyebrow { font-weight: 700; }
+/* Japanese: Arial for Latin, then the platform's Japanese sans for CJK glyphs. */
+html:lang(ja) {
+  --sans:  Arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", Meiryo, "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
+  --serif: var(--sans);
+}
+/* Dark theme: the mark's Forest geometry would vanish into the Forest header, so it sits on a small Ivory plate. */
+.brand-mark { background: var(--fl-ivory); padding: 3px; border-radius: 3px; }
+[data-theme="light"] .brand-mark { background: none; padding: 0; border-radius: 0; }
 .path-card,
 .focus-card,
 .perspective-item,

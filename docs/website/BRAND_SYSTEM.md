@@ -42,6 +42,16 @@ No Google Fonts or other webfont dependency is required for the corporate websit
 
 Forest is primary. Terracotta is a controlled accent, not normal body text. Ivory/white is the preferred light background.
 
+### Text-safe shades (WCAG AA, 4.5:1)
+
+The brand hexes above are used as-is for fills (buttons, card top rules, the mark). Where Terracotta or Sage appear as **small text**, use these same-hue shades, because the brand values fall below 4.5:1 there:
+
+- Terracotta text on Forest (dark mode kickers, eyebrows, links): `#E1B5A7`
+- Terracotta text on Ivory/white (light mode kickers, eyebrows, active language): `#95472F` (also the button hover shade)
+- Sage text on Ivory/Warm Gray (light mode labels, footer note): `#56675E`
+
+In dark mode the mark sits on a small Ivory plate so its Forest geometry stays visible on the Forest header.
+
 ## Logo
 
 The website uses the geometric architectural mark at `/assets/ferrarilabs-mark.svg` plus an Arial wordmark rendered in HTML/CSS.
