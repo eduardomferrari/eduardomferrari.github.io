@@ -29,3 +29,8 @@ To activate it:
 ## Deployment
 
 This site is intended for GitHub Pages.
+
+
+## Brand system
+
+The corporate site uses the FerrariLabs Italian Heritage design system: Arial system typography, Forest `#0F3D2E`, Terracotta `#B85C3E`, Ivory `#F5EDE2`, Charcoal `#1F2937`, Warm Gray `#E7E1DA`, and Sage `#6F8579`. See `docs/website/BRAND_SYSTEM.md`.
