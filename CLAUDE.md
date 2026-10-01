@@ -16,7 +16,7 @@ O bump de cache-bust (`?v=`) é feito pelo bot `sync_version.yml`, que **dispara
 explicitamente** — um push com `GITHUB_TOKEN` não acorda workflow nenhum. Verificar deploy sempre
 comparando o `?v=` ao vivo com o do repositório.
 
-- Main site: `www.ferrarilabs.com` — plus `/financial-crimes/` and `/small-business/`
+- Main site: `www.ferrarilabs.com` — plus `/financial-crimes/`, `/small-business/` and `/small-business/pt/`
 - Bolão root: `www.ferrarilabs.com/bolao/` — redirects to Brasileirão (see below)
 - Copa do Mundo 2026: `www.ferrarilabs.com/bolao/copa2026/` (moved here 2026-07-19, v4.159 — see "Copa do Mundo 2026 archive" below)
 - Brasileirão 2026: `www.ferrarilabs.com/bolao/br2026/` (not published yet)
@@ -32,7 +32,7 @@ python3 -m http.server 8080
 
 Three independent sub-projects:
 
-**Main site** (`index.html`, `financial-crimes/index.html`, `small-business/index.html`, `insights.html`, `index.pt.html`, `index.es.html`, `index.jp.html`, `styles.css`) — static FerrariLabs site. Since 2026-09-30 the homepage (`index.html`) is a short umbrella page linking to two service areas: `/financial-crimes/` (the former homepage content, moved there intact — AML/fraud/sanctions/digital-asset consulting) and `/small-business/` (practical technology for local small businesses). The PT/ES/JP pages are translations of the financial-crimes content, so their `hreflang="en"` / EN switcher point at `/financial-crimes/`. New pages use root-absolute paths (`/styles.css`). Contact form uses Formspree + Cloudflare Turnstile (keys must be set manually in the HTML); the same form is on `/`, `/financial-crimes/` and `/small-business/` (the last with `_subject` "Ferrari Labs — small business inquiry"). `/small-business/` carries schema.org `ProfessionalService` JSON-LD with locality and service area only — never a street address.
+**Main site** (`index.html`, `financial-crimes/index.html`, `small-business/index.html`, `small-business/pt/index.html`, `insights.html`, `index.pt.html`, `index.es.html`, `index.jp.html`, `styles.css`) — static FerrariLabs site. Since 2026-09-30 the homepage (`index.html`) is a short umbrella page linking to two service areas: `/financial-crimes/` (the former homepage content, moved there intact — AML/fraud/sanctions/digital-asset consulting) and `/small-business/` (practical technology for local small businesses). The root PT/ES/JP pages are translations of the financial-crimes content, so their `hreflang="en"` / EN switcher point at `/financial-crimes/`. The small-business line has its own Portuguese localization at `/small-business/pt/`; EN/PT-BR alternate links must remain reciprocal. New pages use root-absolute paths (`/styles.css`). Contact form uses Formspree + Cloudflare Turnstile (keys must be set manually in the HTML); the same form is on `/`, `/financial-crimes/` and `/small-business/` (the last with `_subject` "Ferrari Labs — small business inquiry"). `/small-business/` carries schema.org `ProfessionalService` JSON-LD with locality and service area only — never a street address.
 
 ### Corporate website brand system
 
@@ -42,6 +42,8 @@ For the **Main site only**, the canonical visual system is documented in `docs/w
 - Palette: Forest `#0F3D2E`, Terracotta `#B85C3E`, Ivory `#F5EDE2`, Charcoal `#1F2937`, Warm Gray `#E7E1DA`, Sage `#6F8579`.
 - Logo mark: `/assets/ferrarilabs-mark.svg`; wordmark is rendered in HTML/CSS with Arial.
 - FerrariLabs is the master brand; service families are Business AI & Automation and Financial Crime Technology.
+- Small-business customer-facing messaging is organized as Get Found / Don't Lose the Lead / Run Smarter / Fix What's Broken. Lead with outcomes, not technology names.
+- Portuguese SMB content is a localization/acquisition channel, not a separate brand; English remains the default corporate language.
 - Light mode is default; dark mode uses Forest, not generic black/blue.
 - Do not propagate this corporate brand into any Bolão app unless Eduardo explicitly requests a separate Bolão change.
 - Preserve the existing information architecture, SEO metadata, Formspree/Turnstile behavior, analytics, accessibility, and responsive behavior during brand changes.
