@@ -9,7 +9,8 @@ A static website with two service areas:
 - `/financial-crimes/` — financial crimes & compliance technology: AML, fraud, sanctions,
   model validation, AI in compliance, digital asset risk
 - `/small-business/` — practical technology for local and small businesses: websites,
-  lead follow-up, scheduling, customer communication, admin automation
+  Google presence, lead capture/follow-up, scheduling, customer communication and automation
+- `/small-business/pt/` — Portuguese localization of the small-business offer for the Charlotte-area Brazilian/Portuguese-speaking channel
 
 The homepage (`index.html`) briefly introduces FerrariLabs and links to both.
 
