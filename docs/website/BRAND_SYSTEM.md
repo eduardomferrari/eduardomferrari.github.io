@@ -8,6 +8,7 @@ Applies to:
 - `/index.html`
 - `/financial-crimes/`
 - `/small-business/`
+- `/small-business/pt/`
 - `/insights.html`
 - translated corporate pages
 - `/styles.css`
@@ -73,6 +74,24 @@ Never add horses, shields, racing badges, checkered flags, racing stripes, racec
 - Generous whitespace and strong alignment are preferred over decorative effects.
 - Headings use Arial Bold; body text uses Arial Regular.
 - Preserve semantic HTML, keyboard focus, reduced-motion support, and responsive behavior.
+
+
+## Small-business commercial messaging
+
+The public SMB offer is outcome-led, not technology-led. Use these four customer-facing paths consistently:
+
+1. **Get Found** — website, Google Business Profile, local-search foundations, domain/email basics.
+2. **Don't Lose the Lead** — forms, quote requests, lead routing and follow-up.
+3. **Run Smarter** — scheduling, integrations, repetitive-work automation and practical AI.
+4. **Fix What's Broken** — targeted repairs to websites, forms, domains, email and customer-path friction.
+
+Guardrails:
+- FerrariLabs is not a low-cost website factory and should not compete primarily on price.
+- A complete local-business website should normally start around $1,500+; smaller repair work can be priced below that when the scope is genuinely smaller.
+- Do not manufacture retainers. Recurring fees require recurring work.
+- Lead with the business outcome and the observable problem before describing tools or AI.
+- Portuguese is a localization/acquisition channel, not a separate brand and not a signal that FerrariLabs serves only Brazilian-owned businesses.
+- English remains the default corporate language; the Portuguese SMB page is a localized route for people who prefer Portuguese.
 
 ## Change-control rule
 

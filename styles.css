@@ -397,6 +397,15 @@ nav a:hover, .nav-active { color: var(--text); }
   line-height: 1.8;
   font-weight: 300;
 }
+.offer-grid { grid-template-columns: repeat(2, 1fr); }
+.section-note {
+  max-width: 760px;
+  margin-top: 20px;
+  color: var(--muted-2);
+  font-size: 0.82rem;
+  line-height: 1.75;
+}
+.focus-card strong { color: var(--text); font-weight: 700; }
 
 /* ---- Homepage: two service paths ---- */
 .paths-section {
@@ -659,6 +668,7 @@ nav a:hover, .nav-active { color: var(--text); }
 
 @media (max-width: 680px) {
   .shell { width: min(calc(100% - 32px), var(--max)); }
+  .offer-grid { grid-template-columns: 1fr; }
   .twin-strip { grid-template-columns: 1fr; }
   .twin-item,
   .twin-item:last-child { padding: 28px 0; border-right: none; border-bottom: 1px solid var(--border); }
