@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "competitionId": "bra.1",
   "provider": "espn",
-  "generatedAt": "2026-09-21T01:40:23Z",
-  "sourceUpdatedAt": "2026-09-21T01:40:23Z",
+  "generatedAt": "2026-10-03T02:06:20Z",
+  "sourceUpdatedAt": "2026-10-03T02:06:20Z",
   "stale": false,
   "staleReason": null,
-  "payloadHash": "c338a108f59cbc4c81c67722aba4fd780a2f8a55e1e15fe9a53811fcf0f69cb8",
+  "payloadHash": "91da8960ddd6c8dce46a99d897a9177f0c91ebb9af14d4cdf8a9bf7d6698c9a4",
   "matches": [
     {
       "name": "Flamengo",
@@ -93,10 +93,24 @@
       "gd": 2.0
     },
     {
+      "name": "Santos",
+      "abbr": "SAN",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2674.png",
+      "rank": 7.0,
+      "points": 41.0,
+      "played": 28.0,
+      "wins": 11.0,
+      "draws": 8.0,
+      "losses": 9.0,
+      "gf": 43.0,
+      "ga": 41.0,
+      "gd": 2.0
+    },
+    {
       "name": "Atlético-MG",
       "abbr": "CAM",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7632.png",
-      "rank": 7.0,
+      "rank": 8.0,
       "points": 40.0,
       "played": 27.0,
       "wins": 11.0,
@@ -105,20 +119,6 @@
       "gf": 36.0,
       "ga": 32.0,
       "gd": 4.0
-    },
-    {
-      "name": "Santos",
-      "abbr": "SAN",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2674.png",
-      "rank": 8.0,
-      "points": 38.0,
-      "played": 27.0,
-      "wins": 10.0,
-      "draws": 8.0,
-      "losses": 9.0,
-      "gf": 41.0,
-      "ga": 40.0,
-      "gd": 1.0
     },
     {
       "name": "Coritiba",
@@ -154,13 +154,13 @@
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2026.png",
       "rank": 11.0,
       "points": 36.0,
-      "played": 27.0,
+      "played": 28.0,
       "wins": 10.0,
       "draws": 6.0,
-      "losses": 11.0,
-      "gf": 32.0,
-      "ga": 30.0,
-      "gd": 2.0
+      "losses": 12.0,
+      "gf": 33.0,
+      "ga": 32.0,
+      "gd": 1.0
     },
     {
       "name": "Botafogo",
