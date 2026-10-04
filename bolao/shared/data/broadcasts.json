@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceModel": "EPG_CORROBORATED_WITH_CURATED_OVERRIDE",
   "_comment": "Fonte de dados de 'Onde assistir' (bolao/shared/js/where_to_watch.js). Modelo EPG_CORROBORATED_WITH_CURATED_OVERRIDE (#431): registros sem 'origin' são curadoria humana e sempre vencem; registros 'origin: epg' são gerados por bolao/shared/scripts/sync_epg_broadcasts.mjs a partir da grade de TV — não edite esses à mão. Ver docs/bolao/BROADCAST_OPERATIONS.md antes de editar este arquivo.",
-  "updatedAt": "2026-09-28T05:28:29Z",
+  "updatedAt": "2026-10-04T12:26:05Z",
   "entries": [
     {
       "espnId": "401909114",
@@ -40,6 +40,30 @@
       "channels": ["Globo (TV aberta — consulte sua região)", "sportv", "Premiere", "Amazon Prime Video"],
       "confirmedAt": "2026-09-02",
       "source": "maquinadoesporte.com.br + cnnbrasil.com.br + vavel.com (Globo regional: RJ, BA, ES, SE, RN, PB, MA, Santarém-PA, Juiz de Fora-MG)"
+    },
+    {
+      "espnId": "401841249",
+      "kickoffUtc": "2026-10-08T00:30Z",
+      "home": "Cruzeiro",
+      "away": "São Paulo",
+      "channels": ["SporTV"],
+      "origin": "epg",
+      "source": "EPG XMLTV epgshare01 (BR1/BR2) — corroboração automática: programa cita os dois clubes no horário do kickoff",
+      "confirmedAt": "2026-10-04",
+      "collectedAt": "2026-10-04T12:26:05Z",
+      "evidence": [
+        {
+          "channel": "SporTV",
+          "source": "epgshare-br1",
+          "epgChannelId": "São.Paulo/SP..SporTV.br",
+          "programmeTitle": "Cruzeiro x São Paulo",
+          "programmeSubTitle": "Ao Vivo",
+          "programmeStart": "2026-10-08T00:30:00Z",
+          "programmeStop": "2026-10-08T02:30:00Z",
+          "matchedTeams": ["cruzeiro", "sao-paulo"],
+          "collectedAt": "2026-10-04T12:26:05Z"
+        }
+      ]
     }
   ]
 }
