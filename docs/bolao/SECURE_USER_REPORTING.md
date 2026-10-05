@@ -27,7 +27,11 @@ retenção, deploy e runbook; a RTM canônica permanece no arquivo acima.
 > `ferrarilabs` foi renomeada para `eduardomferrari` e `ferrarilabs` passou a ser uma Organization. O
 > repositório de relatos está agora em **`eduardomferrari/support-intake`** (decisão do Eduardo:
 > permanece pessoal), na mesma conta que é dona da App privada `Ferrarilabs Support Intake`. O
-> registro de provisionamento abaixo e a atestação são de 2026-08-25 e ficam como estavam.
+> registro de provisionamento abaixo e a atestação são de 2026-08-25 e ficam como estavam. A transferência
+> de ida e volta do repositório removeu a instalação `156482151`; a App foi reinstalada na conta
+> `eduardomferrari`, só em `support-intake` (`Metadata: read`, `Issues: read/write`): instalação
+> **`168171584`**, gravada em `REPORT_GITHUB_INSTALLATION_ID`. Versão do Worker implantada:
+> `4b9e5587-1403-418b-b01f-088fa33e263c`; `readiness.mjs --live` verde.
 
 > **Provisionamento concluído (2026-08-25).** O repositório `ferrarilabs/support-intake` foi
 > verificado privado, com Issues ligado, Pages desligado e apenas `ferrarilabs` como colaborador.
