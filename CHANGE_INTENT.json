@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "declarations": [
+    {
+      "surface_id": "EDGE_FUNCTIONS",
+      "reason": "Issue #451: na migracao GitHub da FerrariLabs (2026-10-05) o repositorio privado de relatos passou a ser eduardomferrari/support-intake (conta pessoal renomeada de ferrarilabs; ferrarilabs virou Organization). O Worker ferrarilabs-support-intake ainda declarava REPORT_GITHUB_OWNER=ferrarilabs; a busca de reconciliacao repo:ferrarilabs/support-intake devolve 422 (a busca do GitHub nao segue rename) e a deduplicacao ficou silenciosamente desligada.",
+      "expected_behavior_change": "So o dono do repositorio de destino muda: REPORT_GITHUB_OWNER passa a eduardomferrari (wrangler.jsonc + tipo gerado), provisionar.mjs e readiness.mjs seguem. A busca de reconciliacao volta a encontrar Issues existentes; criacao de Issue, validacao, limites, disjuntor, sanitizacao, invariante de destino privado e contrato de resposta nao mudam. workers/live-producer nao e tocado. Nada e implantado por este PR: o deploy do Worker exige autorizacao explicita do Eduardo.",
+      "tests_required": [
+        "worker-intake",
+        "report-intake",
+        "report-security-ratchets",
+        "worker-isolation",
+        "live-gateway",
+        "live-gateway-fixtures",
+        "live-producer-dispatch"
+      ]
+    }
+  ]
+}
