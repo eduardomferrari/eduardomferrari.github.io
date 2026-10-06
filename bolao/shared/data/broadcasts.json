@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceModel": "EPG_CORROBORATED_WITH_CURATED_OVERRIDE",
   "_comment": "Fonte de dados de 'Onde assistir' (bolao/shared/js/where_to_watch.js). Modelo EPG_CORROBORATED_WITH_CURATED_OVERRIDE (#431): registros sem 'origin' são curadoria humana e sempre vencem; registros 'origin: epg' são gerados por bolao/shared/scripts/sync_epg_broadcasts.mjs a partir da grade de TV — não edite esses à mão. Ver docs/bolao/BROADCAST_OPERATIONS.md antes de editar este arquivo.",
-  "updatedAt": "2026-10-04T23:57:58Z",
+  "updatedAt": "2026-10-06T06:26:00Z",
   "entries": [
     {
       "espnId": "401909114",
@@ -111,6 +111,56 @@
           "programmeStop": "2026-10-08T02:40:00Z",
           "matchedTeams": ["cruzeiro", "sao-paulo"],
           "collectedAt": "2026-10-04T23:57:58Z"
+        }
+      ]
+    },
+    {
+      "espnId": "401841251",
+      "kickoffUtc": "2026-10-08T22:30Z",
+      "home": "Santos",
+      "away": "Flamengo",
+      "channels": ["Premiere"],
+      "origin": "epg",
+      "source": "EPG XMLTV epgshare01 (BR1/BR2) — corroboração automática: programa cita os dois clubes no horário do kickoff",
+      "confirmedAt": "2026-10-06",
+      "collectedAt": "2026-10-06T06:26:00Z",
+      "evidence": [
+        {
+          "channel": "Premiere",
+          "source": "epgshare-br2",
+          "epgChannelId": "Premiere.Clubes.br",
+          "programmeTitle": "Santos x Flamengo - Ao Vivo",
+          "programmeSubTitle": null,
+          "programmeCategories": ["Esporte", "Futebol"],
+          "programmeStart": "2026-10-08T22:30:00Z",
+          "programmeStop": "2026-10-09T00:40:00Z",
+          "matchedTeams": ["santos", "flamengo"],
+          "collectedAt": "2026-10-06T06:26:00Z"
+        }
+      ]
+    },
+    {
+      "espnId": "401841248",
+      "kickoffUtc": "2026-10-09T00:30Z",
+      "home": "Fluminense",
+      "away": "Coritiba",
+      "channels": ["Globo (TV aberta — consulte sua região)"],
+      "origin": "epg",
+      "source": "EPG XMLTV epgshare01 (BR1/BR2) — corroboração automática: programa cita os dois clubes no horário do kickoff",
+      "confirmedAt": "2026-10-06",
+      "collectedAt": "2026-10-06T06:26:00Z",
+      "evidence": [
+        {
+          "channel": "Globo (TV aberta — consulte sua região)",
+          "source": "epgshare-br2",
+          "epgChannelId": "Globo.br",
+          "programmeTitle": "Fluminense x Coritiba - Ao Vivo",
+          "programmeSubTitle": null,
+          "programmeCategories": ["Esporte", "Futebol"],
+          "programmeStart": "2026-10-09T00:20:00Z",
+          "programmeStop": "2026-10-09T02:30:00Z",
+          "matchedTeams": ["fluminense", "coritiba"],
+          "collectedAt": "2026-10-06T06:26:00Z"
         }
       ]
     }
