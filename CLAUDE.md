@@ -30,8 +30,3 @@ Do not import corporate brand/governance into personal subtrees.
 
 Preserve current corporate pages, CNAME, Formspree/Turnstile/analytics behavior, accessibility,
 SEO, and translations.
-
-Footer
-------
-
-© 2026 GitHub, Inc.
