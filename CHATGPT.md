@@ -1,9 +1,12 @@
 # CHATGPT.md — FerrariLabs Corporate Website
 
-This file is the ChatGPT context for the **FerrariLabs corporate public website** only (ferrarilabs.github.io).
+This file is ChatGPT context for the FerrariLabs corporate public website only.
 
-- `CLAUDE.md` (repo root) is the canonical AI context for the FerrariLabs corporate public website.
-- Corporate scope is only the corporate surfaces described in `CLAUDE.md`.
-- All non-company personal projects are strictly outside corporate scope. They must not be indexed, referenced, summarized, modified, monitored, or treated as FerrariLabs assets.
-- Any work under `bolao/` must use `bolao/CLAUDE.md` and `bolao/CHATGPT.md` for its own personal-project context.
-- Do not import corporate brand or governance into personal subtrees.
+- Root `CLAUDE.md` is the canonical AI context for corporate website work.
+- Corporate scope is limited to the corporate surfaces and dependencies explicitly listed in root `CLAUDE.md`.
+- Non-company personal projects are strictly outside corporate scope and must not be indexed, inventoried, summarized, monitored, modified, operated, referenced as FerrariLabs assets, or used as corporate evidence or sources of truth.
+- If work targets an excluded subtree, stop corporate processing for that subtree and use its nearest nested assistant-context file if one exists.
+- Do not name or describe personal projects in root corporate context.
+- Do not import FerrariLabs corporate brand, governance, CRM, Drive, Gmail, PMO, accounting, or operating rules into non-company personal projects.
+- Preserve corporate production behavior, accessibility, SEO, translations, forms, analytics, and deployment safety.
+- Never force-push or rewrite history.
