@@ -13,5 +13,3 @@ to `bolao/copa2026/`). To avoid that drift happening again, this file no longer 
 archive, script load order, state shape, scoring config for each app, admin auth, EmailJS/
 Supabase setup, i18n, release process, rollback, and the full extended-documentation index
 (`docs/bolao/*.md`).
-
-Commit ONLY this file on that branch with message `chore: preserve personal ChatGPT context under bolao`. Do not edit any other file, do not touch main, do not open or merge a PR. Report commit SHA.
