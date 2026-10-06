@@ -1,15 +1,9 @@
-# CHATGPT.md — Bolão do Ferrari
+# CHATGPT.md — FerrariLabs Corporate Website
 
-Context file for AI assistants (ChatGPT, etc.) working on this codebase.
+This file is the ChatGPT context for the **FerrariLabs corporate public website** only (ferrarilabs.github.io).
 
-**`CLAUDE.md` (repo root) is the single source of truth for this project.** It is kept current
-every session; this file previously duplicated its content and drifted out of date (still
-described a single pre-BR2026/CDB2026 app as of 2026-06-27, three weeks after the platform had
-already grown to three independent bolão apps and long after the Copa app moved from `bolao/`
-to `bolao/copa2026/`). To avoid that drift happening again, this file no longer duplicates
-`CLAUDE.md` — read `CLAUDE.md` first, exactly as a Claude Code session would.
-
-`CLAUDE.md` covers: deployment, the three-app repository structure, the Copa do Mundo 2026
-archive, script load order, state shape, scoring config for each app, admin auth, EmailJS/
-Supabase setup, i18n, release process, rollback, and the full extended-documentation index
-(`docs/bolao/*.md`).
+- `CLAUDE.md` (repo root) is the canonical AI context for the FerrariLabs corporate public website.
+- Corporate scope is only the corporate surfaces described in `CLAUDE.md`.
+- All non-company personal projects are strictly outside corporate scope. They must not be indexed, referenced, summarized, modified, monitored, or treated as FerrariLabs assets.
+- Any work under `bolao/` must use `bolao/CLAUDE.md` and `bolao/CHATGPT.md` for its own personal-project context.
+- Do not import corporate brand or governance into personal subtrees.
