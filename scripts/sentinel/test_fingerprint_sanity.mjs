@@ -20,7 +20,7 @@ test("fingerprint format is a stable, greppable string (sha256: prefix)", () => 
 });
 
 test("REPOSITORY constant is set (fingerprint identity includes which repo, not just surface_id)", () => {
-  assert(REPOSITORY === "ferrarilabs/ferrarilabs.github.io");
+  assert(REPOSITORY === "eduardomferrari/eduardomferrari.github.io");
 });
 
 console.log(`\n  ${pass} passed, ${fail} failed`);

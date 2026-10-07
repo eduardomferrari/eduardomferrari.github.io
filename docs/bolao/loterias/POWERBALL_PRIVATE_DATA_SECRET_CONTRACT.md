@@ -170,7 +170,7 @@ silently assumed solved.
 
 To rotate (e.g. after a participant asks to be removed, or a suspected
 exposure): `gh secret set POWERBALL_PRIVATE_PARTICIPANT_DATA --repo
-ferrarilabs/ferrarilabs.github.io < new-file.json`, then verify with `gh
+eduardomferrari/eduardomferrari.github.io < new-file.json`, then verify with `gh
 secret list` (shows update timestamp, never the value). Old value is
 unrecoverable once overwritten — GitHub does not version secret values.
 

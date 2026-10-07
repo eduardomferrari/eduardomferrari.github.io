@@ -56,7 +56,7 @@
   "secrets": { "required": ["GH_DISPATCH_TOKEN"] },
 
   "vars": {
-    "GH_REPO": "ferrarilabs/ferrarilabs.github.io",
+    "GH_REPO": "eduardomferrari/eduardomferrari.github.io",
     "GH_WORKFLOW": "live_cache_producer.yml"
   }
 }

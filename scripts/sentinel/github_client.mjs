@@ -27,7 +27,7 @@ import { execFileSync } from "node:child_process";
 
 export const SENTINEL_LABEL = "sentinel-managed";
 export const PROJECT_TITLE = "Ferrarilabs Engineering";
-export const REPO = "ferrarilabs/ferrarilabs.github.io";
+export const REPO = "eduardomferrari/eduardomferrari.github.io";
 
 // ── real implementation ──────────────────────────────────────────────────────────────────────
 
