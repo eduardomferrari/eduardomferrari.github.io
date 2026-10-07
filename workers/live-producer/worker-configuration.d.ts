@@ -3,7 +3,7 @@
 // Runtime types generated with workerd@1.20260826.1 2026-08-27 nodejs_compat
 interface __BaseEnv_Env {
 	VERSAO: WorkerVersionMetadata;
-	GH_REPO: "ferrarilabs/ferrarilabs.github.io";
+	GH_REPO: "eduardomferrari/eduardomferrari.github.io";
 	GH_WORKFLOW: "live_cache_producer.yml";
 	GH_DISPATCH_TOKEN: string;
 }

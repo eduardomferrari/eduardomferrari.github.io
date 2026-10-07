@@ -13,7 +13,7 @@ import { dispararProdutor } from "./src/index.ts";
 const AQUI = dirname(fileURLToPath(import.meta.url));
 const ENV = {
   GH_DISPATCH_TOKEN: "TOKEN-DE-TESTE",
-  GH_REPO: "ferrarilabs/ferrarilabs.github.io",
+  GH_REPO: "eduardomferrari/eduardomferrari.github.io",
   GH_WORKFLOW: "live_cache_producer.yml",
 };
 
@@ -49,7 +49,7 @@ await teste("o request mira somente o workflow produtor em main", async () => {
   await dispararProdutor(ENV, { fetchImpl: fetchFalso(200, registro) });
   afirma(registro.length === 1, "esperado um unico request");
   const { url, opcoes } = registro[0];
-  afirma(url === "https://api.github.com/repos/ferrarilabs/ferrarilabs.github.io/actions/workflows/live_cache_producer.yml/dispatches", url);
+  afirma(url === "https://api.github.com/repos/eduardomferrari/eduardomferrari.github.io/actions/workflows/live_cache_producer.yml/dispatches", url);
   afirma(opcoes.method === "POST", "dispatch nao usou POST");
   afirma(opcoes.headers.authorization === `Bearer ${ENV.GH_DISPATCH_TOKEN}`, "token ausente do header");
   afirma(!url.includes(ENV.GH_DISPATCH_TOKEN), "token vazou para a URL");
@@ -72,7 +72,7 @@ await teste("credencial ausente falha fechado sem tocar a rede", async () => {
 
 for (const alteracao of [
   { GH_REPO: "outro-repo" },
-  { GH_REPO: "ferrarilabs/ferrarilabs.github.io/../../outro" },
+  { GH_REPO: "eduardomferrari/eduardomferrari.github.io/../../outro" },
   { GH_WORKFLOW: "../outro.yml" },
   { GH_WORKFLOW: "live_cache_producer.txt" },
 ]) {

@@ -11,7 +11,7 @@
  */
 import { createHash } from "node:crypto";
 
-const REPO = "ferrarilabs/ferrarilabs.github.io";
+const REPO = "eduardomferrari/eduardomferrari.github.io";
 
 function hash(parts) {
   return "sha256:" + createHash("sha256").update(parts.join("|")).digest("hex").slice(0, 24);

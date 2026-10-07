@@ -33,7 +33,7 @@ node scripts/sentinel/reconcile.mjs --dry-run
 ```
 
 Both need `gh` authenticated (`GH_TOKEN` env var, or an already-logged-in `gh` CLI session) with at
-least `issues: write` on `ferrarilabs/ferrarilabs.github.io`. Project-field writes additionally
+least `issues: write` on `eduardomferrari/eduardomferrari.github.io`. Project-field writes additionally
 need a token with the `project` scope — see "Known gap: Project token" below.
 
 ## Finding contract

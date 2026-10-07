@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Historical / retrospective record
-    url: https://github.com/ferrarilabs/ferrarilabs.github.io/blob/main/docs/bolao/CHANGELOG.md
+    url: https://github.com/eduardomferrari/eduardomferrari.github.io/blob/main/docs/bolao/CHANGELOG.md
     about: >-
       Historical Issues (past incidents/bugs reconstructed from repo evidence) are created
       only via the governed /historical-publish workflow from an approved candidate list —
