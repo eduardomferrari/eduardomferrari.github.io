@@ -1,5 +1,12 @@
 # Bolão Copa do Brasil 2026 — CHANGELOG
 
+## v3.154 — nova origem de produção eduardomferrari.github.io (2026-10-07)
+
+`PRODUCTION_ORIGINS` (guard de gravação em produção) ganha `https://eduardomferrari.github.io`,
+nova casa da plataforma. Mudança **aditiva**: nenhuma origem foi removida, scoring, regras e
+dados intactos. Sem esta origem o app, servido no novo endereço, recusaria gravações de produção
+(o guard devolve `skipped`). O mesmo ajuste foi aplicado nos outros dois apps (propagação).
+
 ## v3.153 — campeão previsto preserva a identidade do TIME, não só o lado A/B (#440)
 
 Eduardo encontrou um caso real: uma entrada escolheu **Internacional** nas quartas, depois lado A da

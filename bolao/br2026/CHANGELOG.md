@@ -1,5 +1,12 @@
 # Bolão Brasileirão 2026 — CHANGELOG
 
+## v1.139 — nova origem de produção eduardomferrari.github.io (2026-10-07)
+
+`PRODUCTION_ORIGINS` (guard de gravação em produção) ganha `https://eduardomferrari.github.io`,
+nova casa da plataforma. Mudança **aditiva**: nenhuma origem foi removida, scoring, regras e
+dados intactos. Sem esta origem o app, servido no novo endereço, recusaria gravações de produção
+(o guard devolve `skipped`). O mesmo ajuste foi aplicado nos outros dois apps (propagação).
+
 ## v1.138 — jogo terminado não volta a "Em andamento" (2026-09-15, #436)
 
 Produção, 2026-09-14/15: Bahia 2 × 1 Remo terminou (gateway com `state:"post"`, `completed:true`,

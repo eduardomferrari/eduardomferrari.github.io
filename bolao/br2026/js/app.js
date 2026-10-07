@@ -167,6 +167,7 @@ const PRODUCTION_ORIGINS = [
   "https://www.ferrarilabs.com",
   "https://ferrarilabs.com",
   "https://ferrarilabs.github.io",
+  "https://eduardomferrari.github.io",
 ];
 const ALLOW_PROD_WRITES_KEY = "br2026_allow_production_writes";
 function productionWriteBlockReason() {
