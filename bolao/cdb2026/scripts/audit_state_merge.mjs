@@ -16,7 +16,7 @@
  * in app.js, this suite sees the edit. It does deliberately NOT re-implement them (a hand-copied
  * transcription is exactly the drift `audit_scoring.py`'s own header warns about).
  */
-import { readFileSync } from "node:fs";
+import { readFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -75,7 +75,10 @@ function extractConstArrayDecl(name) {
 // O domínio real de produção, lido do CNAME na raiz do repo — mesma fonte de verdade usada por
 // bolao/scripts/audit_test_isolation.mjs, para o harness não transcrever o domínio à mão.
 const PROD_ORIGIN_FOR_HARNESS =
-  "https://" + readFileSync(new URL("../../../CNAME", import.meta.url), "utf8").trim();
+  // Sem CNAME (site de usuario eduardomferrari.github.io) a origem real e o host do Pages.
+  existsSync(new URL("../../../CNAME", import.meta.url))
+    ? "https://" + readFileSync(new URL("../../../CNAME", import.meta.url), "utf8").trim()
+    : "https://eduardomferrari.github.io";
 
 // Set literal de nível superior (`const NOME = new Set([...]);`).
 function extractSetDecl(name) {

@@ -39,6 +39,7 @@ export const ORIGENS_PERMITIDAS: readonly string[] = Object.freeze([
   "https://www.ferrarilabs.com",
   "https://ferrarilabs.com",
   "https://ferrarilabs.github.io",
+  "https://eduardomferrari.github.io",
 ]);
 
 /** Segredos exigidos. A ausencia de qualquer um mantem o canal fechado. */

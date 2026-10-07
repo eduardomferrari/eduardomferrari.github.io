@@ -1,0 +1,10 @@
+{
+  "declarations": [
+    {
+      "surface_id": "EDGE_FUNCTIONS",
+      "reason": "The platform is now served from https://eduardomferrari.github.io. The report-intake Worker answers CORS preflight only for allow-listed origins, so the new origin must be listed or problem reports fail silently for every participant on the new address.",
+      "expected_behavior_change": "workers/user-report-intake/src/index.ts: ORIGENS_PERMITIDAS gains https://eduardomferrari.github.io. Purely additive: no origin removed, no wildcard, no change to intake, authentication, payload or response contract.",
+      "tests_required": ["report-intake", "report-security-ratchets", "report-worker-isolation", "safety-contract"]
+    }
+  ]
+}

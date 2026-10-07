@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v4.190 — nova origem de produção eduardomferrari.github.io (2026-10-07)
+
+`PRODUCTION_ORIGINS` (guard de gravação em produção) ganha `https://eduardomferrari.github.io`,
+nova casa da plataforma. Mudança **aditiva**: nenhuma origem foi removida, scoring, regras e
+dados intactos. Sem esta origem o app, servido no novo endereço, recusaria gravações de produção
+(o guard devolve `skipped`). O mesmo ajuste foi aplicado nos outros dois apps (propagação).
+
 ## v4.189 — 2026-08-13
 
 ### READ_CUTOVER — a leitura passa a vir do modelo normalizado (segunda execucao)

@@ -21,7 +21,7 @@
  * Uso: node bolao/scripts/audit_test_isolation.mjs
  */
 
-import { readFileSync } from "node:fs";
+import { readFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -77,6 +77,9 @@ function extractConstArray(src, name) {
  * produção inteira em silêncio. Só a verificação ao vivo pegou. Agora a suíte pega.
  */
 function cnameOrigin() {
+  // Neste repositorio (site de usuario eduardomferrari.github.io) nao ha CNAME: a origem real e
+  // o proprio host do GitHub Pages. Um CNAME VAZIO continua sendo erro.
+  if (!existsSync(join(REPO, "CNAME"))) return "https://eduardomferrari.github.io";
   const host = readFileSync(join(REPO, "CNAME"), "utf8").trim();
   if (!host) throw new Error("CNAME vazio");
   return `https://${host}`;

@@ -118,6 +118,10 @@ test("o repositorio publico nunca e ALVO de criacao de Issue", () => {
   // E a origem de CORS continua onde deve estar.
   ok(/ORIGENS_PERMITIDAS[\s\S]{0,200}ferrarilabs\.github\.io/.test(srcFn["index.ts"]),
      "a origem legitima do site sumiu da allowlist de CORS");
+  // 2026-10-07: a plataforma passou a ser servida de eduardomferrari.github.io; sem esta origem
+  // o relato de problema falharia no preflight em silencio para todo participante.
+  ok(/ORIGENS_PERMITIDAS[\s\S]{0,300}eduardomferrari\.github\.io/.test(srcFn["index.ts"]),
+     "a origem eduardomferrari.github.io sumiu da allowlist de CORS");
 });
 
 console.log("\n4. Cliente nao controla nada estrutural:");
@@ -151,6 +155,7 @@ test("todo host de saida e literal — nenhuma URL vem do payload", () => {
   const urls = todoFn.match(/https:\/\/[a-z0-9.-]+/gi) || [];
   const permitidos = ["https://api.github.com", "https://www.ferrarilabs.com",
                       "https://ferrarilabs.com", "https://ferrarilabs.github.io",
+                      "https://eduardomferrari.github.io",
                       "https://placeholder.invalid",
                       // `estado.invalid` NAO e destino de rede: o stub de Durable Object exige uma
                       // URL para `fetch()`, e essa chamada nunca sai do isolate. Um dominio
